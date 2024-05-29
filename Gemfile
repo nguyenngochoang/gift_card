@@ -69,3 +69,7 @@ end
 gem "psych", "~> 4"
 
 gem 'devise', '~> 4.9', '>= 4.9.4'
+gem 'money-rails', '~> 1.12'
+gem 'active_model_serializers', '~> 0.10.2'
+gem 'eu_central_bank'
+

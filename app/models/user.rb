@@ -2,6 +2,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :brands, dependent: :destroy
+  has_many :products, dependent: :destroy
+
   before_create :generate_api_key
 
   validates :api_key, :email, uniqueness: true
